@@ -1,18 +1,19 @@
 @darkColor: rgba(0, 0, 0, 0.86);
 @gradientColor: rgba(100, 100, 100, 0.86);
-@globalFont: 14px/1 "Î¢ÈíÑÅºÚ", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@monoFont: Consolas, Courier, "Î¢ÈíÑÅºÚ", monospace;
-
-.button-hover-mixin {
-    border-color: @darkColor;
-    background-color: @darkColor;
-    background-image: -moz-linear-gradient(center top , @gradientColor, @darkColor);
-    background-image: -webkit-linear-gradient(center top , @gradientColor, @darkColor);
-    background-image: -ms-linear-gradient(center top , @gradientColor, @darkColor);
-    background-image: linear-gradient(to bottom , @gradientColor, @darkColor);
-}
+@globalFont: 14px/1 "å¾®è½¯é›…é»‘", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@monoFont: Consolas, Courier, "å¾®è½¯é›…é»‘", monospace;
 
 @-moz-document domain('xueqiu.com') {
+    /* general style for hovering button-like style */
+    .button-hover-mixin {
+        border-color: @darkColor;
+        background-color: @darkColor;
+        background-image: -moz-linear-gradient(center top , @gradientColor, @darkColor);
+        background-image: -webkit-linear-gradient(center top , @gradientColor, @darkColor);
+        background-image: -ms-linear-gradient(center top , @gradientColor, @darkColor);
+        background-image: linear-gradient(to bottom , @gradientColor, @darkColor);
+    }
+
     /* general styles */
     body, .ui-widget, input {
         font: @globalFont;
@@ -300,7 +301,7 @@
     
     /*
     .status .detail a[target="_blank"] {
-        content: "Ô­ÎÄ";
+        content: "åŽŸæ–‡";
     }
     */
     
