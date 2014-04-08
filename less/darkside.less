@@ -61,15 +61,22 @@
         box-shadow: 1px 1px 1px #888;
     }
     
+    .index_login .left_wrap .reg,
+    .index_login .login_btn {
+        background-color: @darkColor;
+    }
+    
+    .index_login .left_wrap .reg:hover,
+    .index_login .login_btn:hover {
+        .button-hover-mixin();
+    }
+    
     /* navbar */
     #logo {
-        line-height: 22px;
         margin-left: 26px;
         width: 94px;
     }
-    .navbar .nav > li > a {
-        padding: 7px 12px 5px;
-    }
+    
     #quick-search {
         margin: 5px 0;
         background-color: #efefef;
@@ -105,13 +112,7 @@
         background: none repeat scroll 0% 0% rgb(200, 200, 200);
     }
     
-    .navbar .nav > li > a {
-        padding-top: 7px;
-        padding-bottom: 7px;
-        line-height: 20px !important;
-    }
-    
-    .navbar-inner {
+    body .navbar-fixed-top .navbar-inner {
         background: none repeat scroll 0% 0% @darkColor;
         min-height: 34px;
         box-shadow: none;
@@ -146,6 +147,10 @@
     /* profile avatar */
     .shadow , .profile_info_pic a img{
         box-shadow: 1px 1px 1px #888;
+    }
+    
+    .btn-char {
+        .button-hover-mixin();
     }
     
     /* portfolio list */
@@ -187,6 +192,7 @@
     }
     .btn-send {
         padding: 10px 2px !important;
+        border-color: @darkColor;
     }
     .session-pane .transmiter {
         border: 1px solid @darkColor !important;
