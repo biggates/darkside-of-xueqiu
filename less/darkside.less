@@ -482,4 +482,32 @@
     input.green_button:hover, a.green_button:hover {
         .button-hover-mixin();
     }
+    
+    /* new chat toolbox */
+    .snbim-mvheader {
+        background-color: @darkColor;
+    }
+    
+    #im_dialogs .im_dialog_headbar {
+        background-color: @darkColor;
+    }
+    
+    #im_dialogs .im_dialog_headbar_control a {
+        background-color: transparent;
+    }
+    
+    .im_dlg_editor {
+        font: @globalFont;
+    }
+    
+    .snbim-cursfocus {
+        background-color: transparent;
+    }
+    
+    #im_dialogs .submit_btn,
+    .snbim-gmm-headerw span,
+    .snbim-ss-back span
+    {
+        .button-hover-mixin(); 
+    }
 }
