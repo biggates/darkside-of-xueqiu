@@ -484,7 +484,9 @@
     }
     
     /* new chat toolbox */
-    .snbim-mvheader {
+    .snbim-mvheader,
+    .snbim-collapsed-header
+    {
         background-color: @darkColor;
     }
     
@@ -509,5 +511,10 @@
     .snbim-ss-back span
     {
         .button-hover-mixin(); 
+    }
+    
+    .snbim-backbtn:hover
+    {
+        background-color: transparent;
     }
 }
